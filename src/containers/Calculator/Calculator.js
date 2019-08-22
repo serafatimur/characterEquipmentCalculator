@@ -8,7 +8,7 @@ class Calculator extends Component {
         person:{},
         equipment:{},
         totalCost: 0,
-        currentEquipment: {}, // equipmentName: optionId
+        currentEquipment: {},
         currentStats: {},
         isHelmet: false,
         links: {
@@ -19,10 +19,11 @@ class Calculator extends Component {
             swords: null
         }
     }
-
+    //после загрузки компонента, подгружаем данные из файла, устанавливаем стартовые характеристики
     componentDidMount() {
         const proxyUrl = "https://cors-anywhere.herokuapp.com/"
         const url ="http://test.datalb.ru/test.json"
+
         fetch(proxyUrl + url)
         .then(response => response.json())
         .then(data => {
@@ -41,11 +42,11 @@ class Calculator extends Component {
             }))
         })
     }
-
+    //Реакция на измение экипировки
     handleChange = event => {
         this.changeCurrentEquipment(event.target.name, event.target.value)
     }
-
+    //изменеяем в state текущую экипировку
     changeCurrentEquipment(equipmentName, optionId) {
         const currentEquipment = this.state.currentEquipment
         currentEquipment[equipmentName] = optionId
@@ -70,7 +71,7 @@ class Calculator extends Component {
         this.recountStats()
         this.changeLinks(equipmentName, optionId)
     }
-
+    // меняем ссылки на изображения экипировки 
     changeLinks(equipmentName, optionId) {
         const links = this.state.links
 
@@ -84,7 +85,7 @@ class Calculator extends Component {
             links
         })
     }
-
+    //пересчитываем характеристики персонажа
     recountStats() {
         let health = parseInt(this.state.person.health)
         let armor = parseInt(this.state.person.armor)
@@ -108,6 +109,7 @@ class Calculator extends Component {
             }
         })
     }
+    //пересчитываем стоимость всей экипировки
     recountTotalCost() {
         let totalCost = 0
         let currentEquipment = this.state.currentEquipment
