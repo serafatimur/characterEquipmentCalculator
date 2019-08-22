@@ -1,0 +1,33 @@
+.EquipmentsImage {
+    margin: 0;
+}
+
+.EquipmentsImage img {
+    position: absolute;
+    display: none;
+}
+
+.Helmet{
+    top: 10px;
+    left: 15px;
+}
+
+.Gloves {
+    top: 155px;
+    left: -30px;
+}
+
+.Chest {
+    top: 86px;
+    left: 20px;
+}
+
+.Boots{
+    top: 250px;
+    left: 0px;
+}
+
+.Sword{
+    top: 195px;
+    left: -120px;
+}

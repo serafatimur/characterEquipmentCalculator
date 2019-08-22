@@ -1,0 +1,10 @@
+.Heroy {
+    width: 370px;
+    height: 551px;
+    border-radius: 4px;
+    background: #F9E78E;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

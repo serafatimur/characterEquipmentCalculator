@@ -1,0 +1,33 @@
+.Shop {
+    width: 370px;
+    height: 551px;
+    border-radius: 4px;
+    background: #F9E88E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Shop h1 {
+    margin:0;
+    margin-top: 27px;
+    height: 28px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.Shop hr {
+    margin-bottom: 25px;
+    margin-top:5px;
+    height: 1px;
+    width: 270px;
+    border: none; 
+    background-color: #727272;
+    color: #727272;
+}

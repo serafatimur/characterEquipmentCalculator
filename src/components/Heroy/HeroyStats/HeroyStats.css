@@ -1,0 +1,61 @@
+.HeroyStats {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-left: 80px;
+    align-self: flex-start;
+}
+
+.HeroyStats p {
+    margin: 0;
+    align-self: flex-start;
+    margin-right: 44px;
+}
+
+.Stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-width: 56px;
+}
+
+.Stats p {
+    margin-bottom: 10px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 56px;
+}
+
+.Stats p:last-child {
+    margin-bottom: 0;
+}
+
+.Stats img {
+    margin-right: 0;
+}
+
+.Heart {
+    color: #FF0000;
+    width:16px;
+    height: 14px;
+}
+
+.Shield {
+    color:#2750B8;
+    width:15px;
+    height: 18px;
+}
+
+.Sword {
+    color: #1C6565;
+    width:20px;
+    height: 20px;
+}

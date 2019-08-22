@@ -1,0 +1,22 @@
+.HeroyName {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+.HeroyName p {
+    margin: 0;
+}
+
+.HeroyName p:first-child {
+    margin-right: 39px;
+}
